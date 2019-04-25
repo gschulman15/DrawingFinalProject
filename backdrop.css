@@ -1,0 +1,64 @@
+#container{
+
+
+  position:fixed;
+  top:0;
+  left:0;
+  min-height:100%;
+  min-width: 100%;
+  width: auto;
+  height: auto;
+}
+
+#clouds{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width:100%;
+  min-height:100%;
+  mix-blend-mode:difference;
+}
+
+#curtains{
+  position: fixed;
+  mix-blend-mode:screen;
+  min-width:100%;
+  min-height:100%;
+}
+
+#bottom{
+  justify-content: center;
+}
+#grass{
+ display:inline-block;
+  position: fixed;
+  min-width:100%;
+  bottom: 0px;
+  justify-content: center;
+}
+
+
+@keyframes flutter{
+  0%{transform: translate(0px, 0px);}
+  50% {transform: translate(100px, 150px);}
+  75% {transform: translate(500px, 300px);}
+  100% {transform: translate(700px, 150px);}
+}
+
+.icon {
+  display: inline-block;
+  width: 10em;
+  height: 10em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  mix-blend-mode: screen;
+  animation-name: flutter;
+  animation-duration:10s;
+  animation-fill-mode: forwards;
+  }
+
+}
+.icon-butterfly {
+  width: 13.330078125em;
+}
