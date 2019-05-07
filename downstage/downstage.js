@@ -123,7 +123,7 @@ angle +=a;
 angle2 +=b;
 angle3 +=c;
 if (angle <= -30 || angle>=30 ){
-  angle *= -a;
+  angle *= -1;
   angle2*=-b;
   angle3*=-c;
 }

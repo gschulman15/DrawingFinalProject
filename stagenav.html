@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Final Project Navigation Page</title>
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+
+  @font-face {
+    font-family:'Amatic SC', cursive;
+    src: url(fonts/amaticsc_regular.tff);
+  }
+
+    body{
+      background-image:url('entrance.jpg');
+      background-size:cover;
+
+    }
+    .a, .b, .c, .d, .e {
+
+      padding: 10px;
+      border: 2px solid white;
+      border-radius: 10px;
+      font-family:'Amatic Sc', cursive;
+      font-size: 1.5em;
+    }
+
+    .a {
+      grid-area: a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+    }
+
+    .b {
+      grid-area: b;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+    }
+
+    .c {
+      grid-area: c;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .d {
+      grid-area: d;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .e{
+      grid-area: e;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .wrapper {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: minmax(100px, auto);
+      column-gap: 10px;
+      row-gap: 1em;
+      //align-content: stretch;
+      grid-template-areas:
+      "a a a"
+      "b c d"
+      "b c d"
+      "e e e";
+
+
+    }
+a:link{
+  color: white;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover{
+  color:red;
+  text-decoration: none;
+}
+
+a:active{
+  color:red;
+}
+
+#header{
+  display:flex;
+  justify-content: center;
+}
+
+    #title{
+      background-color: #BC1010;
+      text-align: center;
+      margin: 20px;
+      width:300px;
+    }
+
+    #name{
+      text-align: bottom;
+    }
+
+h1{
+  color: black;
+  text-shadow: 0px 1px 0px rgba(255,255,255,.5);
+  font-family: Impact, Charcoal, sans-serif;
+}
+
+h2{
+  color: white;
+  font-family: 'Amatic Sc', cursive;
+}
+
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <a href="../index.html"><p>Back</p>
+      <i class="fa fa-arrow-left" style="font-size:20px"></i>
+      </a>
+<div id="title">
+  <h1>Interactive Stage</h1>
+</div>
+<div id="name">
+  <h2>Gabriela Schulman - Spring 2019</h2>
+</div>
+  </div>
+    <div class="wrapper">
+      <div class="a"><a href="upstage/backdrop.html">Up Stage</a></div>
+      <div class="b">Stage Right</div>
+      <div class="c"><a href="centerstage/center.html">Center Stage</a></div>
+      <div class="d">Stage Left</div>
+      <div class="e"><a href="downstage/downstage.html">Down Stage</a></div>
+
+      </div>
+<script>
+function upstage(){
+  var up = ""
+
+}
+
+</script>
+    </body>
+    </html>

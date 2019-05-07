@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CenterStage</title>
+<link href="https://fonts.googleapis.com/css?family=Amatic+SC:700" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="center.css">
+  </head>
+  <body>
+  <div id="container">
+
+
+  <div class="row1">
+    <div id="a" class="option" onmouseover="downstairs()" onmouseout="restore()">
+    <svg class="direction" id="down">
+      <use xlink:href="stage.svg#downstairs"></use>
+      </svg>
+</div> <!--close #a-->
+
+<div id="b" class="option" onmouseover="upstairs()" onmouseout="restore()">
+<svg class="direction">
+  <use xlink:href="stage.svg#upstairs"></use>
+</svg>
+
+</div> <!--close #b-->
+
+    <div id="c" class="option" onmouseover="pickup()" onmouseout="restore()">
+    <svg class="direction">
+      <use xlink:href="stage.svg#pickup"></use>
+    </svg>
+
+  </div> <!--close #c-->
+
+    <div id="c" class="option" onmouseover="putdown()" onmouseout="restore()">
+    <svg class="direction">
+      <use xlink:href="stage.svg#putdown"></use>
+    </svg>
+  </div> <!--close #d-->
+
+    </div> <!--close .row1-->
+
+    <div id="title">
+    <h1>Stage Directions</h1>
+<div id="label">
+  <p>hover over an icon to see what it represents</p>
+</div> <!--close #label-->
+</div> <!--close #title-->
+
+    <div class="row2">
+
+
+    <div id="e" class="option" onmouseover="jump()" onmouseout="restore()">
+      <svg class="direction">
+        <use xlink:href="stage.svg#jump"></use>
+        </svg>
+
+      </div> <!--close #e-->
+
+  <div id="f" class="option" onmouseover="cross()" onmouseout="restore()">
+<svg class="direction">
+  <use xlink:href="stage.svg#cross"></use>
+</svg>
+  </div> <!--close #f-->
+
+  <div id="g" class="option" onmouseover="stop()" onmouseout="restore()">
+    <svg class="direction">
+      <use xlink:href="stage.svg#stop"></use>
+    </svg>
+  </div> <!--close #g-->
+
+  <div id="h" class="option" onmouseover="take()" onmouseout="restore">
+    <svg class="direction">
+      <use xlink:href="stage.svg#take"></use>
+    </svg>
+  </div> <!--close #h-->
+
+    </div> <!--close .row2-->
+
+    <a href="../stagenav.html"><p>Back</p>
+    <i class="fa fa-arrow-left" style="font-size:20px"></i>
+    </a>
+</div> <!--close #container-->
+
+<script src="center.js"></script>
+    </body>
+    </html>
